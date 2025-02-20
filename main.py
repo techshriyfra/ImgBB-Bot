@@ -105,5 +105,7 @@ async def run():
 
 if __name__ == "__main__":
     import threading
-    threading.Thread(target=lambda: app.run(host="0.0.0.0", port=8080)).start()
-    asyncio.run(run())
+    loop = asyncio.get_event_loop()
+    threading.Thread(target=lambda: app.run(host="0.0.0.0", port=8080, debug=False)).start()
+    loop.create_task(run())  # Start bot asynchronously
+    loop.run_forever()
