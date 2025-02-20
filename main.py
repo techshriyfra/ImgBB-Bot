@@ -33,7 +33,7 @@ def health():
 
 START_BTN = ikb([
     [("👾 About", "about"), ("📚 Help", "help")],
-    [("👨‍💻 Developer", "https://bio.link/aminesoukara", "url"), ("❌ Close", "close")],
+    [("👨‍💻 Developer", "https://t.me/Tech_Shreyansh29", "url"), ("❌ Close", "close")],
 ])
 
 HOME_BTN = ikb([[("🏠 Home", "home"), ("❌ Close", "close")]])
@@ -117,11 +117,11 @@ async def getimglink(c, m):
     if not Var.API:
         return await m.reply_text(Tr.ERR_TEXT, quote=True)
     BTN = ikb([
-        [("▫️ 5 Min", "del_300"), ("▫️ 15 Min", "del_900"), ("▫️ 30 Min", "del_1800")],
-        [("▪️ 1 Hour", "del_3600"), ("▪️ 2 Hours", "del_7200"), ("▪️ 6 Hours", "del_21600"), ("▪️ 12 Hours", "del_43200")],
-        [("◽ 1 Day", "del_86400"), ("◽ 2 Days", "del_172800"), ("◽ 3 Days", "del_259200")],
-        [("◾ 1 Week", "del_604800"), ("◾ 2 Weeks", "del_1209600"), ("◾ 1 Month", "del_2629800"), ("◾ 2 Months", "del_5259600")],
-        [("◻ Don't AutoDelete ◼", "del_0")],
+        [("⚡ 5 Min", "del_300"), ("🧃 15 Min", "del_900"), ("⚡ 30 Min", "del_1800")],
+        [("🧃 1 Hour", "del_3600"), ("⚡ 2 Hours", "del_7200"), ("🧃 6 Hours", "del_21600"), ("⚡ 12 Hours", "del_43200")],
+        [("🧃 1 Day", "del_86400"), ("⚡ 2 Days", "del_172800"), ("🧃 3 Days", "del_259200")],
+        [("⚡ 1 Week", "del_604800"), ("🧃 2 Weeks", "del_1209600"), ("⚡ 1 Month", "del_2629800"), ("🧃 2 Months", "del_5259600")],
+        [("⚡ Don't AutoDelete ⚡", "del_0")],
         [("❌ Close", "close")],
     ])
     await m.reply_text("🗑 Select AutoDelete Time:", reply_markup=BTN, quote=True)
