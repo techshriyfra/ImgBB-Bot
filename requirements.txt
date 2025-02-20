@@ -3,3 +3,4 @@ imgbbpy
 fastapi
 uvicorn
 pyromod
+TgCrypto
