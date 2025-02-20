@@ -1,6 +1,5 @@
+flask
 pyrogram
+tgcrypto
 imgbbpy
-fastapi
-uvicorn
 pyromod
-TgCrypto
